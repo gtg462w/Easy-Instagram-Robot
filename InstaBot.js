@@ -5,25 +5,25 @@
 // Like instagram bot
 
 // like variable
-let kira = 0;
+let likes = 0;
 
 // set time for like
 setInterval(function() {
-    // get like button
-    let hati = document.querySelector("button.wpO6b");
-    // dapatkan butang panah pagination
-    let panah = document.querySelector("a.coreSpriteRightPaginationArrow");
+    // Get like button
+    let heart = document.querySelector("button.wpO6b");
+    // Get Pagination Arrow
+    let arrow = document.querySelector("a.coreSpriteRightPaginationArrow");
 
     // if true hit button
-    if(hati){
-        hati.click();
-        kira++;
-        console.log(`Anda telah like ${kira} gambar`);
+    if(heart){
+        heart.click();
+        likes++;
+        console.log(`You've liked ${likes} photos`);
     }
-    // change picture
-    panah.click();
+    // Move to next photo
+    arrow.click();
 
-    // like time loop
+    // Time interval
 }, 60000);
 
 
